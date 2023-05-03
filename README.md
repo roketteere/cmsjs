@@ -10,6 +10,8 @@ be built on top of.
 
 ## Demo
 
+https://user-images.githubusercontent.com/1593262/236070100-75acf86c-7002-4e68-89b1-9bb766e3a511.mov
+
 ![demo image](assets/demo.png)
 
 ## Installation

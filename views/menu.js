@@ -93,27 +93,34 @@ async function start() {
         db(cmd.addRole(title, salary, departmentId));
         break;
       case "add an employee":
-        const { first } = await inquirer.prompt({
+        const first_name = await inquirer.prompt({
           type: "input",
           name: "first",
           message: "first name?",
         });
-        const { last } = await inquirer.prompt({
+        const last_name = await inquirer.prompt({
           type: "input",
           name: "last",
           message: "last name?",
         });
-        const { roleId } = await inquirer.prompt({
+        const roleid = await inquirer.prompt({
           type: "number",
-          name: "roleID",
+          name: "roleid",
           message: "Role ID?",
         });
-        const { managerId } = await inquirer.prompt({
+        const managerid = await inquirer.prompt({
           type: "number",
-          name: "managerID",
+          name: "managerid",
           message: "manager id?",
         });
-        db(cmd.addEmployee(first, last, roleId, managerId));
+        db(
+          cmd.addEmployee(
+            first_name.first,
+            last_name.last,
+            roleid.roleid,
+            managerid.managerid
+          )
+        );
         break;
       case "update an employee":
         const { employee_id } = await inquirer.prompt({

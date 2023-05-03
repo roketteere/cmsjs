@@ -10,6 +10,17 @@ be built on top of.
 
 ## Demo
 
+![demo image](assets/demo.png)
+
+## Installation
+
+1. clone repository
+2. cd into the root directory and run the command: `"npm i"`
+
+## Usage
+
+Once all the packages are installed run: `"node index.js"` and follow the prompt
+
 ## License
 
 MIT

@@ -1,3 +1,3 @@
-const { cases, switchUtil } = require("./util/switch");
+const start = require("./views/menu");
 
-switchUtil();
+start();

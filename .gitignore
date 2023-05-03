@@ -2,3 +2,6 @@
 .DS_STORE
 instructions.md
 node_modules
+reference.sql
+reference.js
+roles.js
